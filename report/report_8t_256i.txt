@@ -1,0 +1,37 @@
+=[0mPlaying: qa_256.mp4
+[0m[0m (+) Video --vid=1 (*) (h264 1620x1080 3.000fps)
+[0m[0m (+) Audio --aid=1 --alang=eng (*) (aac 2ch 44100Hz)
+[0m[0m[encode-lavc] option --ofps not specified and fps could not be inferred, using guess of 24000/1
+[0m[0m[encode-lavc] Opening audio encoder: libmp3lame MP3 (MPEG audio layer 3) [libmp3lame]
+[0m[0mAO: [lavc] 44100Hz stereo 2ch floatp
+[0m[0mVO: [lavc] 1620x1080 yuv420p
+[0m[0m[encode-lavc] Opening video encoder: libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 [libx264]
+[0m[0;33m[ffmpeg] libx264: MB rate (166464000) > level limit (16711680)
+[0m[0m[encode-lavc] Opening output file: video_out
+[0m[0m[encode-lavc] Opening muxer: FLV (Flash Video) [flv]
+[0m[0;33m[vo/lavc] NOTE: not using codec time base (1/24000) for frame dropping; the stream base (1/1000) is worse.
+[0m[0;33m[ao/lavc] NOTE: not using codec time base (1/44100) for pts adjustment; the stream base (1/1000) is worse.
+[0m[K[0mAV: 00:00:00 / 00:00:05 (0%) A-V: -0.072 {0.5min 61.88x 0.0MB} Cache:  2s+128KB[0m[K[0mAV: 00:00:00 / 00:00:05 (5%) A-V: -0.144 {0.0min 58.70x 0.0MB} Cache:  2s+119KB[0m[K[0mAV: 00:00:00 / 00:00:05 (11%) A-V: -0.216 {0.0min 52.86x 0.0MB} Cache:  1s+112KB[0m[K[0mAV: 00:00:01 / 00:00:05 (17%) A-V: -0.288 {0.0min 54.51x 0.0MB} Cache:  1s+106KB[0m[K[0mAV: 00:00:01 / 00:00:05 (23%) A-V: -0.361 {0.0min 54.88x 0.0MB} Cache:  1s+100KB[0m[K[0mAV: 00:00:01 / 00:00:05 (29%) A-V: -0.433 {0.0min 55.58x 0.0MB} Cache:  0s+94KB[0m
+[0;33m
+[0m[0;33mAudio/Video desynchronisation detected! Possible reasons include too slow
+[0m[0;33mhardware, temporary CPU spikes, broken drivers, and broken files. Audio
+[0m[0;33mposition will not match to the video (see A-V status field).
+[0m[0;33m
+[0m[K[0mAV: 00:00:02 / 00:00:05 (35%) A-V: -0.505 {0.0min 55.99x 0.0MB} Cache:  0s+80KB[0m[K[0mAV: 00:00:02 / 00:00:05 (41%) A-V: -0.577 {0.0min 56.06x 0.0MB} Cache:  0s+73KB[0m[K[0mAV: 00:00:02 / 00:00:05 (47%) A-V: -0.649 {0.0min 56.14x 0.0MB} Cache:  0s+67KB[0m[K[0mAV: 00:00:03 / 00:00:05 (52%) A-V: -0.721 {0.0min 56.49x 0.0MB} Cache:  0s+62KB[0m[K[0mAV: 00:00:03 / 00:00:05 (58%) A-V: -0.793 {0.0min 56.60x 0.0MB} Cache:  0s+56KB[0m[K[0mAV: 00:00:03 / 00:00:05 (64%) A-V: -0.865 {0.0min 56.82x 0.0MB} Cache:  0s+51KB[0m[K[0mAV: 00:00:04 / 00:00:05 (70%) A-V: -0.937 {0.0min 57.02x 0.0MB} Cache:  0s+45KB[0m[K[0mAV: 00:00:04 / 00:00:05 (76%) A-V: -1.010 {0.0min 57.22x 0.0MB} Cache:  0s+39KB[0m[K[0mAV: 00:00:04 / 00:00:05 (82%) A-V: -1.082 {0.0min 57.40x 0.0MB} Cache:  0s+34KB[0m[K[0mAV: 00:00:05 / 00:00:05 (88%) A-V: -1.154 {0.0min 57.54x 0.0MB} Cache:  0s+28KB[0m[K[0mAV: 00:00:05 / 00:00:05 (94%) A-V:  0.000 {0.0min 44.41x 0.0MB} Cache:  0s[0m[K[0mAV: 00:00:05 / 00:00:05 (94%) A-V:  0.000 {0.0min 24.56x 0.0MB} Cache:  0s[0m[K[0mAV: 00:00:05 / 00:00:05 (94%) A-V:  0.000 {0.0min 13.23x 0.0MB} Cache:  0s[0m
+[0m
+[0m[0m
+[0m[0mExiting... (End of file)
+[0m[0m[encode-lavc] vo-lavc: encoded 257650 bytes
+[0m[0m[encode-lavc] ao-lavc: encoded 88607 bytes
+[0m[0m[encode-lavc] muxing overhead 4201 bytes
+[0m>
+ Performance counter stats for 'mpv qa_256.mp4 --o=video_out --of=flv --ovc=libx264 --ovcopts=threads=8 --oac=libmp3lame --oacopts=threads=8':
+
+        5570549705      instructions              #    1.77  insn per cycle         
+           9387052      branch-misses                                               
+        3145093178      cycles                                                      
+          82532447      L1-dcache-load-misses                                       
+          45252513      L1-icache-load-misses                                       
+
+       0.847322713 seconds time elapsed
+
